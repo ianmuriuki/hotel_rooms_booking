@@ -20,7 +20,7 @@ A fully functional hotel booking and reservation website built with PHP and MySQ
 - **Backend:** PHP
 - **Database:** MySQL
 - **Frontend:** HTML, CSS, JavaScript
-- **Payment Gateway:** [Add your payment gateway if integrated, e.g., Stripe, PayPal]
+- **Payment Gateway:** [Add your payment gateway if integrated, e.g., Strip, mpesa ]
 
 ## Installation
 
