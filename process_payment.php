@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $payment_code = $_POST['payment_code'];
     $total_price = $_POST['total_price'];
 
-    // Example payment code for demonstration
+    // Defines a hardcoded valid payment code (p1a2i3d4) for demonstration purposes.
     $valid_payment_code = 'p1a2i3d4';
 
     // Check if the payment code is valid
