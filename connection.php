@@ -1,4 +1,3 @@
-// connection.php
 
 <?php
 $servername = "localhost";
