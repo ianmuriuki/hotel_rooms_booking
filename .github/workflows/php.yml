@@ -19,18 +19,20 @@ jobs:
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
+      working-directory: /opt/lampp/htdocs/hotel_rooms_booking
 
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v3
       with:
         path: vendor
-        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        key: ${{ runner.os }}-php-${{ hashFiles('/opt/lampp/htdocs/hotel_rooms_booking/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+      working-directory: /opt/lampp/htdocs/hotel_rooms_booking
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
